@@ -1,0 +1,303 @@
+body {
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+#show {
+	display: none;
+	background: #001f44;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #0066ff 3px solid;
+}
+#show a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-left: 10px;
+}
+#show li {
+	padding: 20px;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background: #17202a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #0066ff 3px solid;
+}
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+header li {
+	float: left;
+	display: inline;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+header #branding {
+	float: left;
+}
+header #branding h1 {
+	margin: 0;
+}
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+header .highlight, header .current a {
+	color: #0066ff;
+	font-weight: bold;
+}
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+#showcase {
+	min-height: 400px;
+	background: url('../images/showcase.jpeg') no-repeat 0 -150px;
+	text-align: center;
+	color: #ffffff;
+}
+#showcase h1 {
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+#showcase p {
+	font-size: 20px;
+}
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background: #17202a;
+}
+#newsletter h1 {
+	float: left;
+}
+#newsletter form {
+	float: right;
+	margin-top: 15px;
+}
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+.button_1 {
+	height: 38px;
+	background: #0066ff;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+.button_2 {
+	height: 38px;
+	background: #0066ff;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+#boxes {
+	margin-top: 20px;
+}
+#boxes .box {
+	float: left;
+	text-align: center;
+	width: 45%;
+	margin: 10px;
+	background-color: #ffffff;
+}
+#boxes .box img {
+	padding: 20px;
+	width: 290px;
+}
+#boxes .box p {
+	padding: 20px;
+}
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #0066ff;
+	text-align: center;
+}
+#investing{
+	background-color: #17202a;
+	padding-bottom: 30px;
+	border-bottom: #0066ff solid 3px;
+}
+#investing h1{
+	text-align: center;
+	margin-top: 50px;
+	color: #ffffff;
+	font-size: 50px;
+}
+#investing .box {
+	float: left;
+	text-align: center;
+	width: 30%;
+	margin: 15px;
+	background-color: #f4f4f4;
+}
+#investing .box p {
+	padding: 25px;
+}
+#investing .box li {
+	display: inline-table;
+}
+#management {
+	min-height: 400px;
+	background: url('../images/management.jpg')no-repeat ;
+	text-align: center;
+	color: #ffffff;
+}
+#management #quote {
+	float: right;
+	margin-top: 100px;
+	font-size: 30px;
+	width: 30%;
+	margin-right: 30px;
+	font-style: italic;
+}
+#management #quote .inv-coma {
+	font-size: 40px;
+}
+#property{
+	background-color: #17202a;
+	padding-bottom: 30px;
+	border-bottom: #0066ff solid 3px;
+}
+#property h1{
+	text-align: center;
+	margin-top: 50px;
+	color: #ffffff;
+	font-size: 50px;
+}
+#property .box {
+	float: left;
+	text-align: center;
+	width: 45%;
+	margin: 10px;
+	background-color: #f4f4f4;
+}
+#property .box p {
+	padding: 25px;
+}
+#property .box img {
+	width: 100%;
+}
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #001f44;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+/*Media Queries*/
+@media(max-width: 951px){
+	.toggle{
+		display: block;
+	}
+	#hide{
+		display: none;
+	}
+	#show{
+		display: block;
+	}
+	#show ul {
+		width: 100%;
+	}
+	#show ul li{
+		display: block;
+		text-align: center;
+	}
+	#show ul li:hover{
+		color: #cccccc;
+		font-weight: bold;
+		background: black;
+	}
+	.active {
+		display: block;
+	}
+
+
+	#showcase, #newsletter, #newsletter h1, #newsletter form, #boxes .container,#boxes .box, #investing .box,#property .box, #property .container {
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin:0;
+		padding: 0;
+	}
+	#showcase h1{
+		margin-top: 40px;
+	}
+	.button_1 {
+		margin-top: 10px;
+		width: 100%;
+		float: none;
+		margin-bottom:10px; 
+	}
+	#newsletter input[type="email"] {
+		margin-top: 10px;
+		width: 100%;
+		float: none;
+	}
+	#newsletter h1 {
+		margin-top: 10px;
+	}
+	#boxes .box{
+		margin: 0;
+		padding: 0;
+	}
+	#boxes .box img{
+		padding: 0;
+		width: 100%;
+	}
+	#investing .box p {
+	padding: 40px;
+	}
+	#investing .box li {
+	display: inline-table;
+	padding-left: 5px;
+	padding-right: 20px;
+	}
+	#investing .box h3 {
+	padding: 10px;
+	font-size: 20px;
+	}
+	#management #quote{
+		float: none;
+		text-align: center;
+		width: 100%;
+		padding-top: 20px;
+	}
+
+
+}
